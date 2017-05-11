@@ -41,7 +41,10 @@ up = \drummode { \repeat volta 2 {
                  < bd >8[hh16 sn ]  \bar "'" r8 <hh bd> \bar "'"
                  <bd>8[<hh >] \bar "'" <sn>8[ hh8] \bar ":|." \bar ":|."\break
                  
-                 <hh bd>4^"180bpm ;-)" <hh sn> hh4 <hh sn>8 bd8 <hh >4 <hh sn> hh8 bd <hh sn>4
+                 \bar ".|:"<hh bd>4^"180bpm ;-)" <hh sn> hh4 <hh sn>8 bd8 <hh >4 <hh sn> hh8 bd <hh sn>4\bar ":|."\break
+                
+
+                 
                  }
 }
 
