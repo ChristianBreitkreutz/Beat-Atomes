@@ -28,39 +28,45 @@ indent = #0
 }
 sb = \bar "'"
 rb= \bar ":|.|:"
-addAccent = #(define-music-function (parser location note-event)
-                                     (ly:music?)
-  "Add an accent ArticulationEvent to the articulations of `note-event',
-  which is supposed to be a NoteEvent expression."
-  (set! (ly:music-property note-event 'articulations)
-        (cons (make-music 'ArticulationEvent
-                'articulation-type "accent")
-              (ly:music-property note-event 'articulations)))
-  note-event)
+ghost= #(define-music-function
+        (parser location note )
+        (ly:music?)
+        #{
+          %< \parenthesize #note >
+          \override Staff.NoteHead #'color = #(rgb-color 0.4 0.5 0.6)
+          #note
+          \override Staff.NoteHead #'color = #(rgb-color 0.0 0.0 0.0)
+        #}
+        )
 allegro = \markup { \bold \large Allegro }
 up = \drummode { \repeat volta 2 {
                  \override Staff.TimeSignature #'stencil = ##f 
-                 <hh bd>16^"1"[sn hh8] \sb <hh sn>8[hh] \rb 
-                 <hh bd>8^"2"[hh16 sn] \sb <hh sn>8[hh] \rb\break
-                 <hh bd>8^"3"[hh8] \sb <hh sn>16[ sn hh8] \rb
-                 <hh bd>8^"4"[hh8] \sb <hh sn>8[hh16 sn] \rb \break
+                 <hh bd>16^"1"[\ghost sn hh8] \sb <hh sn>8[hh] \rb 
+                 <hh bd>8^"2"[hh16 \ghost sn ] \sb <hh sn>8[hh] \rb
+                 \break
+                 <hh bd>8^"3"[hh8] \sb <hh sn>16[ \ghost sn hh8] \rb
+                 <hh bd>8^"4"[hh8] \sb <hh sn>8[hh16 \ghost sn] \rb
+                 \break
  
-                 <hh bd>16^"5"[sn hh8] \sb <hh sn>16 [sn hh8] \rb
-                 <hh bd>8^"6"[hh16 sn] \sb <hh sn>8[ hh16 sn] \rb\break
+                 <hh bd>16^"5"[\ghost sn hh8] \sb <hh sn>16 [\ghost sn hh8] \rb
+                 <hh bd>8^"6"[hh16 \ghost sn] \sb <hh sn>8[ hh16 \ghost sn] \rb
+                 \break
 
-                 <hh bd>16^"7 "[ sn hh8] \sb <hh sn>8[hh16 sn] \rb
-                 <hh bd>8^"8"[hh16 sn] \sb <hh sn>16[sn hh8] \rb\break
+                 <hh bd>8^"7 "[hh16 \ghost sn] \sb <hh sn>16[\ghost sn hh8]\rb
+                 <hh bd>16^"8"[ \ghost sn hh8] \sb <hh sn>8[hh16 \ghost sn] \rb
+                 \break
                  
-                 <hh bd>16^"9"[sn hh sn] \sb <hh sn>8[ hh8] \rb 
-                 <hh bd>8^"10"[hh8] \sb <hh sn>16[sn hh16 sn] \rb \break
+                 <hh bd>8^"9"[hh8] \sb <hh sn>16[\ghost sn hh16 \ghost sn] \rb
+                 <hh bd>16^"10"[\ghost sn hh \ghost sn] \sb <hh sn>8[ hh8] \rb 
+                 \break
                  
-                 <hh bd>16^"11"[sn hh16 sn] \sb <hh sn>16[sn hh8] \rb
-                  <hh bd>16^"12"[sn hh16 sn] \sb <hh sn>8[ hh16 sn] \rb\break
+                 <hh bd>16^"11"[\ghost sn hh16 \ghost sn] \sb <hh sn>16[\ghost sn hh8] \rb
+                  <hh bd>16^"12"[\ghost sn hh16 \ghost sn] \sb <hh sn>8[ hh16 \ghost sn] \rb\break
 
-                  <hh bd>16^"13"[sn hh8] \sb <hh sn>16[sn hh16 sn] \rb
-                  <hh bd>8^"14"[ hh16 sn] \sb <hh sn>16[sn hh16 sn] \rb\break
+                  <hh bd>16^"13"[\ghost sn hh8] \sb <hh sn>16[\ghost sn hh16 \ghost sn] \rb
+                  <hh bd>8^"14"[ hh16 \ghost sn] \sb <hh sn>16[\ghost sn hh16 sn] \rb\break
                  
-                 <hh bd>16^"15"[sn hh sn] \sb <hh sn>16[sn hh16 sn] \rb
+                 <hh bd>16^"15"[\ghost sn hh \ghost sn] \sb <hh sn>16[\ghost sn hh16 \ghost sn] \rb
                   <hh bd>8^"16"[ hh8] \sb <hh sn>8[ hh8] \rb\break
                  }
 }
