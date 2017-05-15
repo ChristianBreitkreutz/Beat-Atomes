@@ -68,7 +68,7 @@ up = \drummode { \repeat volta 2 {
                  \break
 
                  <hh bd>16^"13"[\ghost sn hh8]  \sb <hh sn>16[\ghost sn hh16 \ghost sn] \rb
-                 <hh bd>8^"14"[ hh16 \ghost sn] \sb <hh sn>16[\ghost sn hh16 sn] \rb
+                 <hh bd>8^"14"[ hh16 \ghost sn] \sb <hh sn>16[\ghost sn hh16 \ghost sn] \rb
                  \break
                  
                  <hh bd>16^"15"[\ghost sn hh \ghost sn] \sb <hh sn>16[\ghost sn hh16 \ghost sn] \rb
