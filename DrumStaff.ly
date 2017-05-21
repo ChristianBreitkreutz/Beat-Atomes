@@ -7,7 +7,7 @@
 
   } <<
     \set DrumStaff.drumStyleTable = #(alist->hash-table drumset)
-    \new DrumVoice { \voiceOne \up }
+    \new DrumVoice { \voiceOne \notes }
   >>
   \midi { }
   \layout {

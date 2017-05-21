@@ -42,8 +42,6 @@ ghost= #(define-music-function
 )
 \header{
   title = \markup \center-column { \title }
-  composer=\markup {\date - "Christian Breitkreutz" }
-  subtitle = "(2^4 = 16)"
-
+  composer=\markup { "Christian Breitkreutz" - \date}
 }
 

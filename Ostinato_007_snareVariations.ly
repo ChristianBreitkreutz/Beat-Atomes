@@ -3,7 +3,7 @@ title = "Snare Atomes"
 
 \include "DrumSheet.ly"
 
-up = \drummode { 
+notes = \drummode { 
                  \override Staff.TimeSignature #'stencil = ##f 
 
 
