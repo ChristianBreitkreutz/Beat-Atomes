@@ -7,7 +7,12 @@
 
   } <<
     \set DrumStaff.drumStyleTable = #(alist->hash-table drumset)
-    \new DrumVoice { \voiceOne \notes }
+    \new DrumVoice {
+    	\override Score.BarNumber.break-visibility = #'#(#f #f #f)
+    	\override Staff.TimeSignature #'stencil = ##f  
+    	\voiceOne 
+    	\notes
+    }
   >>
   \midi { }
   \layout {

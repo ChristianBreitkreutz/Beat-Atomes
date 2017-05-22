@@ -4,7 +4,6 @@ title = "Snare Atomes"
 \include "DrumSheet.ly"
 
 notes = \drummode { 
-                 \override Staff.TimeSignature #'stencil = ##f 
 
 
                  <hh bd>16^"1"  [\ghost sn hh8]  \sb <hh sn>8[hh] \rb
