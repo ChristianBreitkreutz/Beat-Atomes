@@ -1,5 +1,5 @@
 \version "2.18.2"
-title = "Beats I"
+title = "Cover Atomes I"
 
 \include "DrumSheet.ly"
 

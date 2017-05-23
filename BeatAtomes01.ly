@@ -50,8 +50,8 @@ notes = \drummode {
                  <hh >8^"1"[ hh8] \sb<hh sn>8[hh] \rb
                  <hh bd>8^"2"[ hh8] \sb<hh sn>8[hh] \rb
                  <hh>8^"3"[ <hh bd>8] \sb<hh sn>8[hh] \rb
-                 <hh >8^"4"[ hh8] \sb<hh sn>8[<hh bd>] \bar ":|."\break
-                 \rb
+                 <hh >8^"4"[ hh8] \sb<hh sn>8[<hh bd>] \rb
+                 \break
                  <hh bd>8^"5"[ hh8] \sb<hh sn>8[<hh bd>] \rb
                  <hh bd>8^"6"[ <hh bd>8] \sb<hh sn>8[hh] \rb
                  <hh>^"7 "[ <hh bd>8] \sb<hh sn>8[<hh bd>] \rb
