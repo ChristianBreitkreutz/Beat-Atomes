@@ -3,7 +3,8 @@ title = "Beat Atomes III"
 
 \include "DrumSheet.ly"
 
-notes = \drummode { 
+notes = \drummode {
+				\rb
                  <hh >16^"G1"[bd hh8]   \sb <hh sn>8[ hh16 bd16] \rb
                  <hh >8^"H1"[hh16 bd16] \sb <hh sn>8[hh16 bd] \rb
                  <hh >8^"I1"[hh8]       \sb <hh sn>16[bd hh16 bd] \rb

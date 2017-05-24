@@ -4,6 +4,7 @@ title = "Beat Atomes IV"
 \include "DrumSheet.ly"
 
 notes = \drummode { 
+	             \rb
                  <hh >16^"J1"[bd hh bd]  \sb <hh sn>8[ hh8] \rb
                  <hh >16^"K1"[bd hh bd]  \sb <hh sn>16[ bd hh8] \rb
                  <hh >8^"L1"[hh16 bd16]  \sb <hh sn>16[bd hh bd] \rb
