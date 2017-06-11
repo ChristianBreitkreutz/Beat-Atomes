@@ -40,6 +40,15 @@ ghost= #(define-music-function
            \parenthesize #note
         #}
 )
+thead= #(define-music-function
+        (parser location note )
+        (ly:music?)
+        #{
+          \once
+          \override NoteHead.transparent = ##t #note
+        #}
+)
+
 \header{
   title = \markup \center-column { \title }
   composer=\markup { "Christian Breitkreutz" - \date}
