@@ -29,8 +29,12 @@ notes = \drummode {
                  \tuplet 5/4 { <cymc bd>8-> [\thead hh \thead hh  \thead hh bd ] } \sb
                  \tuplet 5/4 { <cymc sn>8-> [\thead hh \thead hh  \thead hh bd ] } \rb
                  \break
+                 \rb
                  
-                 
+                 \tuplet 5/4 { \thead hh8^"Refrain to Verse" [\thead hh \thead hh hightom->  hightom ] } \sb
+                 \tuplet 5/4 { lowmidtom8-> [\thead hh \thead hh  lowtom->  lowtom ]  } \sb
+                 \break
+                 \rb
                  
 }
 
