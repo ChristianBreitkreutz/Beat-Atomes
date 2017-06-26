@@ -3,4 +3,4 @@ sudo: required
 before_install:
   - sh ./scripts/install-travis-prereqs.sh
 script:
-- lilypond *Atomes*.ly
+- lilypond *.ly

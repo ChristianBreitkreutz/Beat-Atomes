@@ -1,7 +1,7 @@
 \version "2.18.2"
 title = "Cover Atomes I"
 
-\include "baseFiles/DrumSheet.ly"
+\include "baseFiles/DrumSheet_base.ly"
 
 notes = \drummode { 
   \override Staff.TimeSignature #'stencil = ##f 
@@ -58,4 +58,4 @@ notes = \drummode {
                  \break
 }
 
-\include "atomesBaseFiles/DrumStaff.ly"
+\include "baseFiles/DrumStaff_base.ly"
