@@ -1,7 +1,7 @@
 \version "2.18.2"
 title = "Mark mag Musik"
 
-\include "DrumSheet.ly"
+\include "baseFiles/DrumSheet.ly"
 
 notes = \drummode { 
  
@@ -39,4 +39,4 @@ notes = \drummode {
 }
 
 
-\include "DrumStaff.ly"
+\include "atomesBaseFiles/DrumStaff.ly"

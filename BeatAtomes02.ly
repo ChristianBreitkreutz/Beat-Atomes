@@ -1,7 +1,7 @@
 \version "2.18.2"
 title = "Beat Atomes II"
 
-\include "DrumSheet.ly"
+\include "baseFiles/DrumSheet.ly"
 
 notes = \drummode { 
 
@@ -61,4 +61,4 @@ notes = \drummode {
 }
 
 
-\include "DrumStaff.ly"
+\include "atomesBaseFiles/DrumStaff.ly"

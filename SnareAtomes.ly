@@ -1,7 +1,7 @@
 \version "2.18.2"
 title = "Snare Atomes"
 
-\include "DrumSheet.ly"
+\include "baseFiles/DrumSheet.ly"
 
 notes = \drummode { 
 
@@ -42,4 +42,4 @@ notes = \drummode {
 }
 
 
-\include "DrumStaff.ly"
+\include "atomesBaseFiles/DrumStaff.ly"

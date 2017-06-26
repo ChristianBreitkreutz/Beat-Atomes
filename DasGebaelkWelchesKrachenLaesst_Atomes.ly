@@ -1,7 +1,7 @@
 \version "2.18.2"
 title = "Das Gebälk, welches krachen lässt"
 
-\include "DrumSheet.ly"
+\include "baseFiles/DrumSheet.ly"
 
 notes = \drummode { 
  
@@ -35,4 +35,4 @@ notes = \drummode {
 }
 
 
-\include "DrumStaff.ly"
+\include "atomesBaseFiles/DrumStaff.ly"
