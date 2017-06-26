@@ -12,7 +12,7 @@ wget -q http://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-2.18.
 sudo sh lilypond-2.18.2-1.linux-64.sh --batch
 ```
 
-# run lilypond builder
+## run lilypond builder
 
 ```
 lilypond *.ly
