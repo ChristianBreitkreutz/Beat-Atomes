@@ -48,9 +48,15 @@ thead= #(define-music-function
           \override NoteHead.transparent = ##t #note
         #}
 )
-
+ano= #(define-music-function
+        (parser location text note )
+        (string? ly:music?)
+        #{
+          \balloonGrobText #'Stem #'(-1 . 2) \markup{ #text } #note
+        #}
+)
 \header{
   title = \markup \center-column { \title }
-  composer=\markup { "Christian Breitkreutz" - \date}
+  composer=\markup { "Christian Breitkreutz" - rendererd: \date}
 }
 
